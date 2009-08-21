@@ -1,0 +1,124 @@
+/*- colors
+  orange: #e87511
+  green: #878905
+  blue: #0054a0
+  grey: #565959
+---------------*/
+
+/*- common elements
+----------------------------------------------------------------------*/ 
+html, body { height: 100%; }
+body { font-family: helvetica neue,helvetica,arial,sans-serif; font-size: 87.5%; color: #333; line-height: 1.5em; }
+p { margin:0 0 1.5em; }
+a { color: #0583f5; }
+a:hover { color: #3B98E1; }
+a:visited { color: #0583f5; }
+
+strong { font-weight: bold; }
+em { font-style: italic;}
+
+table { background:#FFFFFF none repeat scroll 0 0; border:2px solid #CCCCCC; border-collapse:collapse; margin:0 0 1.5em; border-spacing:0; }
+table th, table td { border:1px solid #CCCCCC; border-collapse:collapse; padding:0.25em 1em; }
+table th { background:#EEEEEE none repeat scroll 0 0; border-bottom:3px solid #CCCCCC; font-weight:bold; padding:0.5em 1em; }
+
+/*- header
+----------------------------------------------------------------------*/
+#header-top-wrap { margin: 0 auto; background: #000 url(images/color_blocks.png) center 8px no-repeat; /*border-bottom: 1px solid #565959;*/ }
+#header-top { width:968px; margin:0 auto; position:relative; color:#dce0df; text-align: right; padding: 3px 0;}
+#header-top a { color: #e87511; text-decoration: none; }
+#header-top a:hover { color: #e87511; text-decoration: underline; }
+
+#header-wrap { margin: 0 auto; background-color: #222; /*border-bottom: 1px solid #565959; border-top: 1px solid #111;*/ }
+#header { width:968px; margin:0 auto; position:relative; height:70px; color:#eee; }
+#header h1 a { position:absolute; top:13px; left:10px; height: 42px; width: 203px; background: url(images/relevance_logo.png) top left no-repeat;}
+#header h1 a span { display: none; }
+
+#header #top-nav { position: absolute; top: 20px; right: 0; }
+#header #top-nav ul li { float: left; }
+#header #top-nav ul li a { display: block; padding: 5px 9px; margin-left: 8px; color: #eee; text-decoration: none; font-size: 110%; background-color: #565959; }
+#header #top-nav ul li a:hover { color: #e87511; background-color: #666; }
+
+#header a, #footer a { color: #0583f5; }
+
+/*- content
+----------------------------------------------------------------------*/ 
+#content-wrap { margin: 0 auto -120px; border-top: 1px solid #111; padding: 15px 0; }
+#content { width:968px; margin: 0 auto; position:relative; padding-left: 1em;}
+
+#content a[href^="http:"] { background: url(images/outbound_link_icon.png) right 3px no-repeat; padding-right: 8px; margin-right: 1px;}
+
+#content h1, #content h2, #content h3, #content h4, #content h5, #content h6 { font-weight: bold; margin-bottom: 1em; }
+#content h1 { font-size: 205%; text-transform: uppercase; }
+#content h2 { font-size: 170%; text-transform: uppercase; }
+#content h3 { font-size: 150%; }
+#content h4 { font-size: 135%; }
+#content h5 { font-size: 120%; }
+#content h6 { font-size: 105%; }
+
+#content div.hr { background: url(images/color_blocks.png) center top no-repeat; width: 100%; height: 10px; margin: 15px 0; }
+
+/*
+#content ul {  }
+#content ul, #content ol { margin:0 1.0em 1.0em;}
+#content ul li { background:transparent url(images/bullet_square_333.png) no-repeat scroll left 0.6em; padding: 0 0 0.25em 1em; }
+
+#content ol { list-style-type:decimal; }
+#content ol li { list-style-position:outside; padding-bottom: 0.25em; margin-left: 1em;}
+*/
+
+/*- table of contents sidebar
+----------------------------------------------------------------------*/ 
+#content #left { width: 680px; float: left; }
+#content #sidebar { width: 250px; top: 0; right: 0; position: absolute; }
+#content #sidebar h4 { margin:0; }
+#content div.maruku_toc { width: 250px; top: 2em; right: 0; position: absolute; }
+#content div.maruku_toc ul { list-style-type: decimal; margin: 0; }
+#content div.maruku_toc ul li { font-weight: bold; padding: 0 0 0.5em 0.5em; background: none; }
+#content div.maruku_toc ul li ul li { font-weight: normal; padding-left: 1em; }
+#content div.maruku_toc ul li ul li:last-child { padding-bottom: 0; }
+
+/* index page 
+----------------------------------------------------------------------*/ 
+.index #content h1.primary { font-size: 200%; margin-bottom: 0.5em;}
+.index #content p { font-size: 120%; margin: 0 0 1em; text-align: center; }
+.index #content p.secondary { font-size: 90%; }
+
+#content div.splash-wrap { width: 951px; height: 249px; background: url(images/splash_slogan.png) top left no-repeat; margin: 0 auto; }
+#content ul.splash { list-style-type: none; margin-top: 10px; display: none;}
+#content ul.splash li { text-transform: uppercase; font-family: Arial; color: #222; text-decoration: none; word-spacing: normal; letter-spacing: -2px; line-height: 0.9em; font-size: 3em; padding-bottom: 10px; }
+#content ul.splash li.lockin { font-family: Arial Black; letter-spacing: 2px; word-spacing: 14px; }
+#content ul.splash li.release { letter-spacing: -2px; word-spacing: 14px; }
+#content ul.splash li.ask { letter-spacing: 2px; word-spacing: 12px; }
+#content ul.splash li.change { letter-spacing: -0.06em; word-spacing: -2px; }
+#content ul.splash li.more { letter-spacing: -0.035em; }
+#content ul.splash li .release, li .feedback, li .adapt, li .iterate { font-family: Arial Black; color: #e87511;}
+#content ul.splash li .release { color: #e87511;}
+#content ul.splash li .feedback { color: #0054a0;}
+#content ul.splash li .adapt { color: #878905;}
+#content ul.splash li .iterate { color: #e87511;}
+
+.index #content div.client { float: left; width: 33%; }
+.index #content div.client blockquote { text-align: center;}
+.index #content div.client p.quote { display: inline-block; padding: 20px; background: #e7e7e7 url(images/quote_box_bottom_border.png) bottom left no-repeat; border: 1px solid #ccc; text-decoration: none; color: #333; font-size: 95%; width: 80%; text-align: left; }
+.index #content div.client p.quote:hover { background-color: #dfdfdf; border-color: #bbb; }
+.index #content div.client p.attribution span { padding-left: 20px; display: block; line-height: 1.2em;}
+.index #content div.client p.attribution span.name { font-weight: bold; }
+.index #content div.client p.attribution span.title { font-size: 80%; }
+.index #content div.client p.attribution span.organization { font-size: 80%; }
+
+/*- commits
+----------------------------------------------------------------------*/ 
+#content ul.commit-list { list-style-type: none; margin: 0; }
+#content ul.commit-list li { border-bottom: 1px solid #ccc; padding: 0 0 5px; margin: 0 0 5px; }
+#content ul.commit-list li span.message { display: block; line-height: 1.0em;}
+#content ul.commit-list li span.commit-by { display: inline-block; font-size: 85%; color: #666;}
+#content ul.commit-list li span.commit-on { display: inline-block; font-size: 85%; color: #666;}
+
+/*- footer
+----------------------------------------------------------------------*/ 
+.wrapper { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -120px; }
+.wrapper .push { height: 120px; clear: both;}
+
+#footer-wrap { background: #333 url(images/footer-top-border.gif) top left repeat-x; height: 120px; }
+#footer { width:968px; padding: 10px 0; margin:0 auto; position:relative; color:#eee; font-size: 90%; }
+#footer a { color: #6bb7fc; }
